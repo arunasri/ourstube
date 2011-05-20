@@ -1,7 +1,10 @@
 class YoutubesController < ApplicationController
+
   def index
   end
+
   def videos
-    render :json => { :videos => ["QZYS8xoBYhM", "kBfdQYpF1NA", "Qy_bQSKysYw"] }
+    render :json => { :videos => YOUTUBE_IDS }
   end
+
 end

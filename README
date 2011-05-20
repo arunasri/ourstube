@@ -1,2 +1,2 @@
-youtubes controller videos will return list of available videos.
-please change videos method to change playing videos.
+To add videos go to config/initializers/videos.rb and add the youtube video ids there.
+
