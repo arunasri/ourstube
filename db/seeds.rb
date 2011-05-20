@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+
+video_ids = %w(_p62iQYvA2k p62iQYvA2dd _p62iQYvA2k)
+
