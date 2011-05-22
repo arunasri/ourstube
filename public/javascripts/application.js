@@ -11,9 +11,12 @@ function onPlayerChange(newstate) {
 }
 
 function playNext() {
-	var index = $.inArray(currentVideoId, videos);
-	index++;
-	if (index === videos.length) {
+	//var index = $.inArray(currentVideoId, videos);
+	//index++;
+
+    var index = videos[Math.floor(Math.random() * videos.length)];
+
+	if (index >= videos.length) {
 		index = 0;
 	}
 
