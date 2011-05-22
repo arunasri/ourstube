@@ -11,18 +11,8 @@ function onPlayerChange(newstate) {
 }
 
 function playNext() {
-	//var index = $.inArray(currentVideoId, videos);
-	//index++;
-
     var index = videos[Math.floor(Math.random() * videos.length)];
-
-	if (index >= videos.length) {
-		index = 0;
-	}
-
-	currentVideoId = videos[index];
-	ytplayer.loadVideoById(currentVideoId);
-
+	ytplayer.loadVideoById(index);
 }
 
 function onPlayerError(error) {}
