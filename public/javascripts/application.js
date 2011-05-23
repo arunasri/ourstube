@@ -21,7 +21,8 @@ jQuery(function($) {
 	$.getJSON('videos', function(data) {
 		videos = data.videos;
 
-		currentVideoId = videos[0];
+		//currentVideoId = videos[0];
+		currentVideoId = videos[Math.floor(Math.random() * videos.length)];
 
 		var params = {
 			allowScriptAccess: "always"
